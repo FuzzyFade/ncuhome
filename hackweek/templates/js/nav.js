@@ -24,21 +24,21 @@ $(function () {
                     right: "0px",
                     transition: "right 1s"
                 });
-            // } else if (direction == "left") {
-            //     navDiv.css({
-            //         left: "0px",
-            //         transition: "left 1s"
-            //     });
-            // } else if (direction == "up") {
-            //     navDiv.css({
-            //         top: "0px",
-            //         transition: "top 1s"
-            //     });
-            // } else if (direction == "down") {
-            //     navDiv.css({
-            //         bottom: "0px",
-            //         transition: "bottom 1s"
-            //     });
+            } else if (direction == "left") {
+                navDiv.css({
+                    left: "0px",
+                    transition: "left 1s"
+                });
+            } else if (direction == "up") {
+                navDiv.css({
+                    top: "0px",
+                    transition: "top 1s"
+                });
+            } else if (direction == "down") {
+                navDiv.css({
+                    bottom: "0px",
+                    transition: "bottom 1s"
+                });
             }
 
 
@@ -63,21 +63,21 @@ $(function () {
             left: "-67%",
             transition: "left .5s",
         });
-        // rightNav.css({
-        //     right: "-50%",
-        //     transition: "right .5s"
-        // });
-        // upNav.css({
-        //     top: "-40%",
-        //     transition: "top .5s"
-        // });
-        // downNav.css({
-        //     bottom: "-50%",
-        //     webkitTransition:"bottom .5s",
-        //     oTransition:"bottom .5s",
-        //     mozTransition:"bottom .5s",
-        //     transition: "bottom .5s"
-        // });
+        rightNav.css({
+            right: "-50%",
+            transition: "right .5s"
+        });
+        upNav.css({
+            top: "-40%",
+            transition: "top .5s"
+        });
+        downNav.css({
+            bottom: "-50%",
+            webkitTransition:"bottom .5s",
+            oTransition:"bottom .5s",
+            mozTransition:"bottom .5s",
+            transition: "bottom .5s"
+        });
         bg.fadeOut()
     }
 });
