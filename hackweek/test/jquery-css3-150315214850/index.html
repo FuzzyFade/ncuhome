@@ -1,0 +1,56 @@
+﻿<!doctype html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css">
+	<style>
+	* {margin: 0; padding: 0;}
+	.mobile {
+		float: left; position: relative;
+		overflow: hidden;
+	}
+	/*将平移做成抽屉模式*/
+	#tm {display: none;}
+	/*将勾选框删除*/
+	.mobile section {
+		background: url("img/mb1.png");
+		width: 285px;height: 600px;
+		position: relative; transition: all 0.25s;
+	}
+	.mobile section label {
+		color: #c6c6c6; font: bold 14px Montserrat; text-align: center;
+		border: 2px solid white; border-radius: 4px;
+		display: block; padding: 10px 0;
+		width: 60%; position: absolute; left: 20%; top: 100px;
+		cursor: pointer; text-transform: uppercase;
+	}
+	.sidenav {
+		background: #ffffff;margin-left: 50px;
+		position: absolute; left: 0; top: 0; bottom: 0; padding-top: 100px;
+	}
+	.sidenav li {list-style-type: none;}
+	/*去除点号*/
+	.sidenav a { color: #7a7a7a; text-decoration: none; }
+	.sidenav b {
+		font: bold 12px/48px Montserrat; display: block;
+		opacity: 0; transform: translateX(50px); transition: all 0.4s;
+	}
+	#tm:checked ~ section {transform: translateX(200px);}/*设置宽度*/
+	#tm:checked ~ .sidenav b {opacity: 1; transform: translateX(0);}
+	</style>
+	<script src="http://libs.baidu.com/html5shiv/3.7/html5shiv.min.js"></script>
+</head>
+<body>
+  <div class="mobile">
+	  <input type="checkbox" id="tm" />
+	    <ul class="sidenav">
+			<li><a href="#"><b>Tasks</b></a></li>
+			<li><a href="#"><b>Messages</b></a></li>
+		</ul>
+	  <section>
+		  <label for="tm" style = "border:0"><img src = "img/right.svg"></label>
+		  <!--绑定tm事件-->
+	  </section>
+  </div>
+</body>
+</html>
