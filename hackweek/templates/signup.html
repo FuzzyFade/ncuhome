@@ -47,11 +47,14 @@
             /*border-width: 0;*/
         /*}*/
         .line2{
+            flex: 0;
             height: .025rem;
             width: 6.875rem;
             background: -webkit-linear-gradient(left,rgba(254, 255, 255, 0), #9ce0ff,rgba(255,255,255,0));
             background: linear-gradient(to right, rgba(254, 255, 255, 0), #9ce0ff,rgba(255,255,255,0));
-            border-width: 0
+            border-width: 0;
+            margin-left: auto;
+            margin-right: auto;
         }
         input::-ms-input-placeholder{
             font-family: PingFangSC-Light;
@@ -82,18 +85,21 @@
         }
     </style>
 </head>
-<body>
+<p>
 </div>
 <h1 style="text-align: center" class = "biaoti"><b>创建您的账号</b></h1>
 <form action="/signup" method="post">
-    <p class = "input-p"><input type = "text" name = "username" class = "sign-up-input" placeholder = "用户名" style = "border: none"></p>
-    <p><center><hr class = "line2"/></center></p>
-    <p class = "input-p"><input type = "password" name = "password" class = "sign-up-input2" placeholder = "输入密码" style = "border: none"></p>
-    <p><center><hr class = "line2"/></center></p>
-    <p class = "input-p"><input type = "password" name = "password1" class = "sign-up-input2" placeholder = "确认密码" style = "border: none"></p>
+    <p class = "input-p">
+        <input type = "text" name = "username" class = "sign-up-input" placeholder = "用户名" onclick="this.placeholder=''" style = "border: none"></p>
+        <p class = "line2"/></p>
+    <p class = "input-p">
+        <input type = "password" name = "password" class = "sign-up-input2" placeholder = "输入密码" onclick="this.placeholder=''" style = "border: none"></p>
+        <p class = "line2"/></p>
+    <p class = "input-p">
+        <input type = "password" name = "password1" class = "sign-up-input2" placeholder = "确认密码" onclick="this.placeholder=''" style = "border: none"></p>
+    <div class="wrapper">
+        <button class="fancy-button bg-gradient1" style="margin-top:2.05rem;"><span style="letter-spacing: 0.119rem;padding: 11px 60px;">创建并登录</span></button>
 </form>
-<div class="wrapper">
-    <a href="#" class="fancy-button bg-gradient1" style="margin-top:2.05rem"><span style="letter-spacing: 0.119rem;padding: 11px 60px;">创建并登录</span></a>
 </div>
 
 </body>
