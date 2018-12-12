@@ -18,27 +18,27 @@ $(function () {
 
     function showNav(btn, navDiv, direction) {
         btn.on('click', function () {
-            bg.fadeIn()
+            bg.fadeIn('fast')
             if (direction == "right") {
                 navDiv.css({
                     right: "0px",
                     transition: "right 1s"
                 });
-            } else if (direction == "left") {
-                navDiv.css({
-                    left: "0px",
-                    transition: "left 1s"
-                });
-            } else if (direction == "up") {
-                navDiv.css({
-                    top: "0px",
-                    transition: "top 1s"
-                });
-            } else if (direction == "down") {
-                navDiv.css({
-                    bottom: "0px",
-                    transition: "bottom 1s"
-                });
+            // } else if (direction == "left") {
+            //     navDiv.css({
+            //         left: "0px",
+            //         transition: "left 1s"
+            //     });
+            // } else if (direction == "up") {
+            //     navDiv.css({
+            //         top: "0px",
+            //         transition: "top 1s"
+            //     });
+            // } else if (direction == "down") {
+            //     navDiv.css({
+            //         bottom: "0px",
+            //         transition: "bottom 1s"
+            //     });
             }
 
 
