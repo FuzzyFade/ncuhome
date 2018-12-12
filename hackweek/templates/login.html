@@ -77,15 +77,15 @@
     <p style = "text-align: center"><img src = "imgs/Needing.png" alt = "图片加载失败"></p>
 </div>
 <form action="/login" method="post">
-    <p class = "input-p"><input type = "text" name = "username" class = "sign-up-input" placeholder = "用户名" style = "border: none"></p>
+    <p class = "input-p"><input type = "text" name = "username" class = "sign-up-input" placeholder = "用户名" onclick="this.placeholder=''" style = "border: none"></p>
     <p><center><hr class = "line"/></center></p>
-    <p class = "input-p"><input type = "password" name = "password" class = "sign-up-input2" placeholder = "密码" style = "border: none"></p>
+    <p class = "input-p"><input type = "password" name = "password" class = "sign-up-input2" placeholder = "密码" onclick="this.placeholder=''" style = "border: none"></p>
     <!--<p class = "input-p"><input type = "submit" style = "font-size: 16px" class = "sign-up-login" value = "登    录"/></p>-->
     <div class="wrapper">
-        <input type="submit"><a href="#" class="fancy-button bg-gradient1"><span>登  录</span></a>
+        <button class="fancy-button bg-gradient1" style="margin-top: 1.45rem"><span>登  录</span></button>
     </div>
     <div class="wrapper">
-        <input type="submit"><a href="#" class="fancy-button bg-gradient2" style="margin-top: 29px"><span>注  册</span></a>
+        <button class="fancy-button bg-gradient2" style="margin-top: .75rem"><span>注  册</span></button>
     </div>
     <!--<p class = "input-p"><a href = "signup.html"><input style = "font-size: 16px" class = "sign-up-register" value = "注    册"/></a></p>-->
 </form>
