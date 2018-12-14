@@ -75,7 +75,7 @@
             position: fixed;
             width: 100%;
             height: 100%;
-            opacity: .8;
+            opacity: .67;
         }
         .noise{
             background-image: url(http://matthew.wagerfield.com/flat-surface-shader/assets/graphics/noise.png);
@@ -90,7 +90,7 @@
             top: 0;
         }
         .vignette {
-            background-image: -webkit-radial-gradient(50% 50%, ellipse, rgba(0, 0, 0, 0) 45%, rgba(1, 0, 0, .25) 114%);
+            background-image: -webkit-radial-gradient(50% 50%, ellipse, rgba(127, 223, 255, 0) 65%, rgba(96, 174, 255, 0.4) 114%);
         }
     </style>
 </head>
@@ -107,9 +107,9 @@
     </div>
 
     <form action="/login" method="post">
-        <p class = "input-p"><input type = "text" name = "username" class = "sign-up-input" placeholder = "用户名" onclick="this.placeholder=''" style = "border: none"></p>
+        <p class = "input-p"><input type = "text" name = "username" class = "sign-up-input" placeholder = "用户名" onclick="this.placeholder=''" style = " background: transparent;border-radius:20px;border: none"></p>
         <p><center><hr class = "line"/></center></p>
-        <p class = "input-p"><input type = "password" name = "password" class = "sign-up-input2" placeholder = "密码" onclick="this.placeholder=''" style = "border: none"></p>
+        <p class = "input-p"><input type = "password" name = "password" class = "sign-up-input2" placeholder = "密码" onclick="this.placeholder=''" style = "background: transparent;border-radius:20px;border: none"></p>
         <!--<p class = "input-p"><input type = "submit" style = "font-size: 16px" class = "sign-up-login" value = "登    录"/></p>-->
         <div class="wrapper">
             <button class="fancy-button bg-gradient1" style="margin-top: 1.45rem"><span>登  录</span></button>
@@ -120,6 +120,9 @@
         <!--<p class = "input-p"><a href = "signup.html"><input style = "font-size: 16px" class = "sign-up-register" value = "注    册"/></a></p>-->
     </form>
 </div>
+<script>
+    // setTimeout(,3000);
+</script>
 
 <script>
     (function(){
@@ -129,15 +132,15 @@
         var MESH = {
             width: 5.5,
             height: 2,
-            depth: 20,
+            depth: 50,
             segments: 15,
             slices: 9,
             xRange: 0.35,
             yRange: 0.22,
             zRange: 1.0,
-            ambient: '#bababa',
-            diffuse: '#70c4ff',
-            speed: 0.001
+            ambient: '#fcfcfc',
+            diffuse: '#bcadb0',
+            speed: 0.0011
         };
 
         //------------------------------
@@ -146,10 +149,12 @@
         var LIGHT = {
             count: 1,
             xyScalar: 1,
-            zOffset: 70,
-            ambient: '#71d4ff',
-            diffuse: '#32b9fa',
-            speed: 0.001,
+            zOffset: 30,
+            // ambient: '#4bd3ff',
+            // diffuse: '#2ccbfa',
+            ambient: '#d9f1f6',
+            diffuse: '#586e78',
+            speed: 0.000,
             gravity: 1200,
             dampening: 0.95,
             minLimit: 10,
